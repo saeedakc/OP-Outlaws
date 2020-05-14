@@ -9,10 +9,10 @@ Enjoli | enjbaez | Baez
 
 Chelsea | chtho3 | Thompson
 
-Project Description: In this project, we are working on exploring the Opioid Crisis in the United States over time (from 2006-2019). Our research examines this correlation by examining relationships between race/ethnicity, age, prescription drug & its risk to addiction. We hope to create a model to help predict opiate use in the future based on some of these relationships.
-
 
 # Proposal Questions:
+Project Description: In this project, we are working on exploring the Opioid Crisis in the United States over time (from 2006-2019). Our research examines this correlation by examining relationships between race/ethnicity, age, prescription drug & its risk to addiction. We hope to create a model to help predict opiate use in the future based on some of these relationships.
+
 1. What age groups succumbs most and least by Opioid overdoses?
 
 2. What race/ethnicity succumbs most and least to Opioid Ovedoses?
