@@ -25,4 +25,12 @@ Opioid Overdose Deaths by Age Group: https://www.kff.org/other/state-indicator/o
 
 Prescription Opioid Data: https://www.cdc.gov/drugoverdose/data/prescribing.html
 
+
 # Tasks Breakdown
+Saeeda: 
+
+Kareem:
+
+Chelsea:
+
+Enjoli:
