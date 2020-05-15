@@ -37,6 +37,6 @@ Saeeda: JS
 
 Kareem: Python/HTML/CSS
 
-Chelsea: Wrangling & JS
-
 Enjoli: MLM
+
+Chelsea: Wrangling & JS
