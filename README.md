@@ -15,7 +15,7 @@ Project Description: In this project, we are working on exploring the Opioid Cri
 
 1. What age groups succumbs most and least by Opioid overdoses?
 
-2. What race/ethnicity succumbs most and least to Opioid Ovedoses?
+2. What race/ethnicity succumbs most and least to Opioid Overdoses?
 
 3. Which top three states have the most Opioid related deaths?
 
