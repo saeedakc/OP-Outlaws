@@ -33,10 +33,10 @@ Bonus Data:
 Provisional Drug Overdose Death Counts: https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm
 
 # Tasks Breakdown
-Saeeda: 
+Saeeda: JS
 
-Kareem:
+Kareem: Python/HTML/CSS
 
-Chelsea:
+Chelsea: Wrangling & JS
 
-Enjoli:
+Enjoli: MLM
