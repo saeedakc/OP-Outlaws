@@ -49,3 +49,51 @@
             </div>
           </div>
         </nav>
+        <div id="tableaugraph">
+
+          <div class="container">            
+            <div class="col-md-8">
+              <h3>Opioid Drug Overdose Prediction Data</h3>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-md-8">
+            <div class='tableauPlaceholder' id='viz1590266536317' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OP&#47;OP-OutlawsPredictionData&#47;TS4RXprediction&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OP-OutlawsPredictionData&#47;TS4RXprediction' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OP&#47;OP-OutlawsPredictionData&#47;TS4RXprediction&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590266536317');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+          </div>
+        </div>
+        <div class="container">
+          <div class="col-md" >
+            <p></p>
+            <p>The above bar chart shows the detailed time series
+            prediction for the TS4 model we trained with available Medicare and 
+            Medicaid prescription MME data. This data is normalized to prescriptions
+            filled rate per 100 persons, which is a technical measure that incorporates 
+            a specific calculation for how often opiates are prescribed and 
+            how MUCH is prescribed on average. A general decrease would indicate more 
+            than one factor in the crisis is declining, as a calculated rate between 
+            number and amount of prescriptions. </p>
+            <p></p>
+            <hr>
+            <h3>Prediction Model with 95% Confidence Interval</h3>
+          </div>
+          <div class="container">
+          <div class="col-md-8">
+            <img src="..\static\data\Images\future_National_forecast.png" />
+          </div>
+        </div>
+        </div>
+          <div class="container">
+          <div class="col-md">
+            The above Matplotlib model shows the difference between our model and
+            the actual condensed data generated from the CDC. The x-axis shows the 
+            year for the data being considered, and the y-axis is the morphene molecular
+            equivalents (MME) calculated as a precribed rate per 100 persons. This rate
+            shows a continued decrease in our time-series model at a high statistical confidence.
+          </div>
+        </div>
+      </div>
+
+      </body>
+      </html>
