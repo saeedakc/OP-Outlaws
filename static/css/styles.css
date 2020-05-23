@@ -41,3 +41,13 @@ header,
 .card {
     background-color: rgba(126, 123, 215, 0.2);
     }
+
+.container {
+  margin: 15px;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
