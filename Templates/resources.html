@@ -11,13 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../static/css/styles.css">
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body> 
 
     <!-- Potential Background Image Maybe-->
-    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-size: cover; background-position: center center;">
 
         <!--Nav Bar Insertion w/ Drop-down Menu-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -54,21 +53,36 @@
    
           
           <!--Content-->
-          <div class="text-black text-center d-flex align-items-center rgba-black-strong py-5 px-4">
-            <div>
+          <div class="text-black d-flex align-items-center rgba-black-strong py-5 px-4">
+            <div class="col-md-6">
               <h3 class="card-title pt-2"><strong>Project Resources</strong></h3>
               <p>
                 In this section you can find some of the links that we used to pull our data for our visualizations. 
-                Kaggle, The Henry Kaiser Family Foundation (KFF), and the Center for Disease Control were all exceptional databases to pull information from in this project.
-                Please find link to specific data points below:
+                <b>Kaggle</b>, <b>The Henry Kaiser Family Foundation (KFF)</b>, and the <b>Center for Disease Control</b> were all exceptional databases to pull information from in this project.
+                Please find link to specific data points through the links below:
               </p>
-              <p> 
-                Prescribed Cases Data (https://www.cdc.gov/drugoverdose/opioids/prescribed.html)
-                Opioid Overdose by Ethnicity (https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-raceethnicity/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D)
-                Specific Opioid Prescription Drug (https://www.kaggle.com/apryor6/us-opiate-prescriptions)
-                Opioid Overdose by Age Group (https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-age-group/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D)
-                Data on Drug Overdose (https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
-              </p>
+              <hr>
+              <p><ul>
+                <li>CDC Prescribed Cases Data (<a href="https://www.cdc.gov/drugoverdose/opioids/prescribed.html">EXTERNAL LINK</a>)</li>
+                <li>KFF Opioid Overdose by Ethnicity (<a href="https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-raceethnicity/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">EXTERNAL LINK</a>)</li>
+                <li>Kaggle Specific Opioid Prescription Drug (<a href="https://www.kaggle.com/apryor6/us-opiate-prescriptions">EXTERNAL LINK</a>)</li>
+                <li>KFF Opioid Overdose by Age Group (<a href="https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-age-group/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D">EXTERNAL LINK</a>)</li>
+                <li>CDC Data on Drug Overdose Deaths (<a href="https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm">EXTERNAL LINK</a>)</li>
+              </ul></p>
             </div>
           </div>
+          
+          <div class="text-black d-flex align-items-center rgba-black-strong py-5 px-4">
+            <div class="col-md-6">
+              <h3 class="card-title pt-2"><strong>Further Reading</strong></h3>
+              <p>Please reference the following papers and websites for further reading about current Opioid Crisis research, findings, and legislation. Further reading into the time series machine learning model used in this
+                project can also be found listed below, with special thanks to Haroon Ahmed and Sanhita Banerjee for their invaluable help.
+              </p>
+              <hr>
+              <p><ul>
+                <li>CDC Opioid Main Page (<a href="https://www.cdc.gov/vitalsigns/opioids/index.html">EXTERNAL LINK</a>)</li>
+                <li>PNAS Predicting Opioid Overdose Deaths (<a href="https://www.pnas.org/content/117/4/1917">EXTERNAL LINK</a>)</li>
+                <li>Duke University AMIRA Modeling (<a href="https://people.duke.edu/~rnau/411arim.htm">EXTERNAL LINK</a>)</li>
+                <li>EDUreka! Youtube Tutorials (<a href="https://www.youtube.com/watch?v=e8Yw4alG16Q&amp;t=907s">EXTERNAL VIDEO</a>)</li>
+              </ul></p>
         </div>
