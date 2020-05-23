@@ -17,10 +17,11 @@
 <body> 
 
     <!-- Potential Background Image Maybe-->
-
+    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 
         <!--Nav Bar Insertion w/ Drop-down Menu-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
             <a class="navbar-brand" href="index.html">OP Outlaws</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -43,7 +44,31 @@
 
               <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
               </form>
             </div>
-          </nav>
+          </div>
+        </nav>
+        
+        <!--Insert Card Tile-->
+   
+          
+          <!--Content-->
+          <div class="text-black text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+            <div>
+              <h3 class="card-title pt-2"><strong>Project Resources</strong></h3>
+              <p>
+                In this section you can find some of the links that we used to pull our data for our visualizations. 
+                Kaggle, The Henry Kaiser Family Foundation (KFF), and the Center for Disease Control were all exceptional databases to pull information from in this project.
+                Please find link to specific data points below:
+              </p>
+              <p> 
+                Prescribed Cases Data (https://www.cdc.gov/drugoverdose/opioids/prescribed.html)
+                Opioid Overdose by Ethnicity (https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-raceethnicity/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D)
+                Specific Opioid Prescription Drug (https://www.kaggle.com/apryor6/us-opiate-prescriptions)
+                Opioid Overdose by Age Group (https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-age-group/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D)
+                Data on Drug Overdose (https://www.cdc.gov/nchs/nvss/vsrr/drug-overdose-data.htm)
+              </p>
+            </div>
+          </div>
+        </div>
