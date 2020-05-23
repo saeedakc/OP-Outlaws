@@ -3,6 +3,7 @@ body,
 header,
 .view {
   height: 100%;
+  background-repeat:repeat;
 }
 
 @media (max-width: 740px) {
@@ -28,6 +29,7 @@ header,
 
   .navbar:not(.top-nav-collapse) {
     background: transparent !important;
+    margin-bottom: 15px;
   }
 
   @media (max-width: 991px) {
