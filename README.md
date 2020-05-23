@@ -11,18 +11,13 @@ Chelsea | chtho3 | Thompson
 
 
 # Proposal Questions:
-Project Description: In this project, we are working on exploring the Opioid Crisis in the United States over time (from 2006-2019). Our research examines this correlation by examining relationships between race/ethnicity, age, prescription drug & its risk to addiction. We hope to create a model to help predict opiate use in the future based on some of these relationships.
-
-1. What age groups succumbs most and least by Opioid overdoses?
-
-2. What race/ethnicity succumbs most and least to Opioid Overdoses?
-
-3. Which top three states have the most Opioid related deaths?
-
-4. Where do people get their Opioids? Are the means in which they are prescribed legal/illegal?
-
+Project Description: In this project, we use machine learning models such as Multi-Linear Regressiona and Times Series ARIMA to predict future Opioid prescription claim amounts. The historical data gathered included included opioid claim amounts from 2006 - 2017 in the United States. The Opioid Epedemic began in the early 2000s as opioids were initially prescribed by doctors for physical pain management. As the prescription claim amount increased, research began to discovery the reason for addiction and manage usage. 
 
 # Data Sets
+CDC dataset with National Opioid prescription claims: https://www.cdc.gov/drugoverdose/data/prescribing/prescribing-practices.html
+
+CMS dataset with National Opioid prescription claims: https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/Medicare-Provider-Charge-Data/OpioidMap_Medicare_PartD
+
 U.S. Opiate Prescriptions/Overdoses: https://www.kaggle.com/apryor6/us-opiate-prescriptions
 
 Opioid Overdose Deaths by Age Group: https://www.kff.org/other/state-indicator/opioid-overdose-deaths-by-age-group/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D
@@ -37,6 +32,6 @@ Saeeda: JS
 
 Kareem: Python/HTML/CSS
 
-Enjoli: MLM
+Enjoli: Multi-Linear Regression and Time Series Arima Model
 
 Chelsea: Wrangling & JS
