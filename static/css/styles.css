@@ -51,3 +51,9 @@ img {
   width: 100%;
   height: auto;
 }
+
+.style {
+  background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
