@@ -1,32 +1,30 @@
-//new WOW().init();
+// Define SVG area dimensions
+var svgWidth = 960;
+var svgHeight = 660;
 
-// // Define SVG area dimensions
-// var svgWidth = 960;
-// var svgHeight = 660;
+// Define the chart's margins as an object
+var chartMargin = {
+  top: 30,
+  right: 30,
+  bottom: 30,
+  left: 30
+};
 
-// // Define the chart's margins as an object
-// var chartMargin = {
-//   top: 30,
-//   right: 30,
-//   bottom: 30,
-//   left: 30
-// };
+// Define dimensions of the chart area
+var chartWidth = svgWidth - chartMargin.left - chartMargin.right;
+var chartHeight = svgHeight - chartMargin.top - chartMargin.bottom;
 
-// // Define dimensions of the chart area
-// var chartWidth = svgWidth - chartMargin.left - chartMargin.right;
-// var chartHeight = svgHeight - chartMargin.top - chartMargin.bottom;
+// Select body, append SVG area to it, and set the dimensions
+var svg = d3
+  .select("body")
+  .append("svg")
+  .attr("height", svgHeight)
+  .attr("width", svgWidth);
 
-// // Select body, append SVG area to it, and set the dimensions
-// var svg = d3
-//   .select("body")
-//   .append("svg")
-//   .attr("height", svgHeight)
-//   .attr("width", svgWidth);
-
-// // Append a group to the SVG area and shift ('translate') it to the right and down to adhere
-// // to the margins set in the "chartMargin" object.
-// var chartGroup = svg.append("g")
-//   .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
+// Append a group to the SVG area and shift ('translate') it to the right and down to adhere
+// to the margins set in the "chartMargin" object.
+var chartGroup = svg.append("g")
+  .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
 // // Load data
 // d3.csv("/static/data/age_totals.csv").then(function(ageData) {
@@ -47,52 +45,52 @@
 
 
 
-// D3 Animated Scatter Plot
+// // D3 Animated Scatter Plot
 
-// Section 1: Pre-Data Setup
-// ===========================
-// Before we code any data visualizations,
-// we need to at least set up the width, height and margins of the graph.
-// Note: I also added room for label text as well as text padding,
-// though not all graphs will need those specifications.
+// // Section 1: Pre-Data Setup
+// // ===========================
+// // Before we code any data visualizations,
+// // we need to at least set up the width, height and margins of the graph.
+// // Note: I also added room for label text as well as text padding,
+// // though not all graphs will need those specifications.
 
-// Grab the width of the containing box
-var width = parseInt(d3.select("#scatter").style("width"));
+// // Grab the width of the containing box
+// var width = parseInt(d3.select("#scatter").style("width"));
 
-// Designate the height of the graph
-var height = width - width / 3.9;
+// // Designate the height of the graph
+// var height = width - width / 3.9;
 
-// Margin spacing for graph
-var margin = 20;
+// // Margin spacing for graph
+// var margin = 20;
 
-// space for placing words
-var labelArea = 110;
+// // space for placing words
+// var labelArea = 110;
 
-// padding for the text at the bottom and left axes
-var tPadBot = 40;
-var tPadLeft = 40;
+// // padding for the text at the bottom and left axes
+// var tPadBot = 40;
+// var tPadLeft = 40;
 
-// Create the actual canvas for the graph
-var svg = d3
-  .select("#scatter")
-  .append("svg")
-  .attr("width", width)
-  .attr("height", height)
-  .attr("class", "chart");
+// // Create the actual canvas for the graph
+// var svg = d3
+//   .select("#scatter")
+//   .append("svg")
+//   .attr("width", width)
+//   .attr("height", height)
+//   .attr("class", "chart");
 
-// Set the radius for each dot that will appear in the graph.
-// Note: Making this a function allows us to easily call
-// it in the mobility section of our code.
-var circRadius;
-function crGet() {
-  if (width <= 530) {
-    circRadius = 5;
-  }
-  else {
-    circRadius = 10;
-  }
-}
-crGet();
+// // Set the radius for each dot that will appear in the graph.
+// // Note: Making this a function allows us to easily call
+// // it in the mobility section of our code.
+// var circRadius;
+// function crGet() {
+//   if (width <= 530) {
+//     circRadius = 5;
+//   }
+//   else {
+//     circRadius = 10;
+//   }
+// }
+// crGet();
 
 // The Labels for our Axes
 
@@ -110,11 +108,11 @@ var xText = d3.select(".xText");
 function xTextRefresh() {
   xText.attr(
     "transform",
-    "translate(" +
-      ((width - labelArea) / 2 + labelArea) +
-      ", " +
-      (height - margin - tPadBot) +
-      ")"
+    // "translate(" +
+    //   ((width - labelArea) / 2 + labelArea) +
+    //   ", " +
+    //   (height - margin - tPadBot) +
+    //   ")"
   );
 }
 xTextRefresh();
@@ -148,9 +146,9 @@ xText
 // B) Left Axis
 // ============
 
-// Specifying the variables like this allows us to make our transform attributes more readable.
-var leftTextX = margin + tPadLeft;
-var leftTextY = (height + labelArea) / 2 - labelArea;
+// // Specifying the variables like this allows us to make our transform attributes more readable.
+// var leftTextX = margin + tPadLeft;
+// var leftTextY = (height + labelArea) / 2 - labelArea;
 
 // We add a second label group, this time for the axis left of the chart.
 svg.append("g").attr("class", "yText");
@@ -158,15 +156,15 @@ svg.append("g").attr("class", "yText");
 // yText will allows us to select the group without excess code.
 var yText = d3.select(".yText");
 
-// Like before, we nest the group's transform attr in a function
-// to make changing it on window change an easy operation.
-function yTextRefresh() {
-  yText.attr(
-    "transform",
-    "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
-  );
-}
-yTextRefresh();
+// // Like before, we nest the group's transform attr in a function
+// // to make changing it on window change an easy operation.
+// function yTextRefresh() {
+//   yText.attr(
+//     "transform",
+//     "translate(" + leftTextX + ", " + leftTextY + ")rotate(-90)"
+//   );
+// }
+// yTextRefresh();
 
 // Now we append the text.
 // 1. Obesity
@@ -203,7 +201,7 @@ yText
 // by the Behavioral Risk Factor Surveillance System.
 
 // Import our CSV data with d3's .csv import method.
-d3.csv("assets/data/data.csv").then(function(data) {
+d3.csv("/static/data/age_totals.csv").then(function(data) {
   // Visualize the data
   visualize(data);
 });
