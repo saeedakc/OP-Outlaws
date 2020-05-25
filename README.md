@@ -30,8 +30,8 @@ Provisional Drug Overdose Death Counts: https://www.cdc.gov/nchs/nvss/vsrr/drug-
 # Tasks Breakdown
 Saeeda: JS
 
-Kareem: Python/HTML/CSS
+Kareem: HTML/CSS
 
 Enjoli: Multi-Linear Regression and Time Series Arima Model
 
-Chelsea: Wrangling & JS
+Chelsea: Wrangling & Tableau
