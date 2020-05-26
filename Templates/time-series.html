@@ -16,7 +16,7 @@
 <body> 
 
     <!-- Potential Background Image Maybe-->
-    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> -->
 
       <!--Nav Bar Insertion w/ Drop-down Menu-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,10 +30,10 @@
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Resources Channel
+                    Menu
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="graphs.html">Graphs</a>
+                    <a class="dropdown-item" href="graphs.html">MLR Model</a>
                     <a class="dropdown-item" href="time-series.html">Time Series Model</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="demographics.html">Demographics</a>
@@ -44,46 +44,22 @@
             </div>
           </div>
         </nav>
-        <div id="tableaugraph">
+      <div>
 
-          <div class="container">            
-            <div class="col-md-8">
-              <h3>Opioid Drug Overdose Prediction Data</h3>
+        <div class ="container">
+            <h3>Prediction Model with 95% Confidence Interval</h3></div>
+         <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <img src="..\static\data\Images\ACF_PACF.png " />
+            </div>
+            <div class="col-md-6">
+              <img src="..\static\data\Images\future_National_forecast.png" />
             </div>
           </div>
-        </div>
-        <div class="container">
-          <div class="col-md-8">
-            <div class='tableauPlaceholder' id='viz1590266536317' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OP&#47;OP-OutlawsPredictionData&#47;TS4RXprediction&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OP-OutlawsPredictionData&#47;TS4RXprediction' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OP&#47;OP-OutlawsPredictionData&#47;TS4RXprediction&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590266536317');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-
-          </div>
-        </div>
-
-    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-        
-        <div class="container">
-          <div class="col-md" >
-            <p></p>
-            <p>The above bar chart shows the detailed time series
-            prediction for the TS4 model we trained with available Medicare and 
-            Medicaid prescription MME data. This data is normalized to prescriptions
-            filled rate per 100 persons, which is a technical measure that incorporates 
-            a specific calculation for how often opiates are prescribed and 
-            how MUCH is prescribed on average. A general decrease would indicate more 
-            than one factor in the crisis is declining, as a calculated rate between 
-            number and amount of prescriptions. </p>
-            <p></p>
-            <hr>
-            <h3>Prediction Model with 95% Confidence Interval</h3>
-          </div>
-          <div class="container">
-          <div class="col-md-8">
-            <img src="..\static\data\Images\future_National_forecast.png" />
-          </div>
-        </div>
-        </div>
           <div class="container">
           <div class="col-md">
+            (ACF) Autocorrelation Function graph and (PACF) partial Autocorrelation Function graph produce the RSS or Residual sum of squares. The goal is to have a model that minimizes the total squared residual, or RSS.  The RSS results of this model are 0.02. 
             The above Matplotlib model shows the difference between our model and
             the actual condensed data generated from the CDC. The x-axis shows the 
             year for the data being considered, and the y-axis is the morphene molecular
@@ -93,9 +69,35 @@
         </div>
       </div>
     </div>
+    <!-- <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"></div> --> -->
+    <!-- <div id="tableaugraph"> -->
 
-    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <div class="container">            
+        <div class="col-md-8">
+          <h3>Opioid Drug Overdose Prediction Data</h3>
+        </div>
+      </div>
+    <div class="container">
+      <div class="col-md-8">
+      <div class='tableauPlaceholder' id='viz1590266536317' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OP&#47;OP-OutlawsPredictionData&#47;TS4RXprediction&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='OP-OutlawsPredictionData&#47;TS4RXprediction' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;OP&#47;OP-OutlawsPredictionData&#47;TS4RXprediction&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1590266536317');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> -->
+
+      </div>
     </div>
+
+    <div class="container">
+      <div class="col-md" >
+        <p></p>
+        <p>The above bar chart shows the detailed time series
+        prediction for the TS4 model we trained with available Medicare and 
+        Medicaid prescription MME data. This data is normalized to prescriptions
+        filled rate per 100 persons, which is a technical measure that incorporates 
+        a specific calculation for how often opiates are prescribed and 
+        how MUCH is prescribed on average. A general decrease would indicate more 
+        than one factor in the crisis is declining, as a calculated rate between 
+        number and amount of prescriptions. </p>
+        <p></p>
+
+    
 
 </body>
     </html>

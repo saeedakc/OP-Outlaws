@@ -16,7 +16,7 @@
 <body> 
 
     <!-- Potential Background Image Maybe-->
-    <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> -->
 
         <!--Nav Bar Insertion w/ Drop-down Menu-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,10 +30,10 @@
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Resources Channel
+                   Menu
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="graphs.html">Graphs</a>
+                    <a class="dropdown-item" href="graphs.html">MLR Model</a>
                     <a class="dropdown-item" href="time-series.html">Time Series Model</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="demographics.html">Demographics</a>
@@ -57,9 +57,10 @@
                   <div class="card-body">
                   <h5 class="card-title">Summary: America's Opioid Pandemic</h5>
                   <hr>
-                  <p class="card-text">In our project, we are working on exploring the Opioid Crisis in the United States over a series of time (from 2006-2019).
-                      Our research examines this correlation by examining relationships between race/ethnicity, age, prescription drug & its risk to addiction. We hope
-                      to create a model to help predict opiate use in the future based on some of these relationships. 
+                  <p class="card-text">In this project, we use machine learning models such as Multi-Linear Regressiona and Times Series ARIMA 
+                    to predict future Opioid prescription claim amounts. The historical data gathered included included opioid claim amounts from 2006 - 2017 
+                    in the United States. The Opioid Epedemic began in the early 2000s as opioids were initially prescribed by doctors for physical pain 
+                    management. As the prescription claim amount increased, research began to discovery the reason for addiction and manage usage. 
                   </p>
                   <p class="card-text"><small class="text-muted">Last updated on May 21st</small></p>
                   </div>
@@ -69,8 +70,30 @@
           </div>
         </div>
 
-      <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <!-- <div class="view" style="background-image: url('https://image.freepik.com/free-vector/white-background-with-blue-tech-hexagon_1017-19366.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"> -->
 
+        <div class="mask rgba-gradient align-items-center">
+          <div class="container">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row no-gutters">
+              <div class="col-md-4">
+                  <img src="https://cdn.shrm.org/image/upload/c_crop,h_3076,w_5472,x_0,y_0/c_fit,f_auto,q_auto,w_767/v1/Legal%20and%20Compliance/prescriptions2_bwota8?databtoa=eyIxNng5Ijp7IngiOjAsInkiOjAsIngyIjo1NDcyLCJ5MiI6MzA3NiwidyI6NTQ3MiwiaCI6MzA3Nn19" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                  <div class="card-body">
+                  <h5 class="card-title">Why a Mulitple Linear Regression?</h5>
+                  <hr>
+                  <p class="card-text">At first, we analyzed our data with a multiple linear regression model was to get a feel for the overall opioid trending
+                    for each state. This model shows very basic linear trending data from one year to the next.
+                  </p>
+                  <p class="card-text"><small class="text-muted">Last updated on May 24th</small></p>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+
+          
         <div class="mask rgba-gradient align-items-center">
           <div class="container">
             <div class="card mb-3" style="max-width: 540px;">
@@ -83,7 +106,7 @@
                   <h5 class="card-title">Why a Time-Series Model?</h5>
                   <hr>
                   <p class="card-text">The reason we chose to run a time-series model was because it helps us answer some of the questions we first inquired. The 
-                  time-series graphs shows relationships between changes (if any) in the number of Opioid drug-related deaths. 
+                  time-series graphs shows relationships between changes in the number of Opioid drug-related deaths. 
                   </p>
                   <p class="card-text"><small class="text-muted">Last updated on May 24th</small></p>
                   </div>
@@ -91,6 +114,7 @@
               </div>
             </div>
           </div>
+
         </div>
 </div>
 
