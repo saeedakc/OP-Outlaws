@@ -34,4 +34,4 @@ Kareem: HTML/CSS
 
 Enjoli: Multi-Linear Regression and Time Series Arima Model
 
-Chelsea: Wrangling, Tableau, and HTML
+Chelsea: Wrangling and Tableau
