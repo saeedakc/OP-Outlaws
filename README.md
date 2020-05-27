@@ -1,3 +1,5 @@
+# Github Page: https://saeedakc.github.io/OP-Outlaws/
+
 # OP-Outlaws
 Group Members: 
 
@@ -9,8 +11,6 @@ Enjoli | enjbaez | Baez
 
 Chelsea | chtho3 | Thompson
 
-
-# Github Page: https://saeedakc.github.io/OP-Outlaws/index.html
 
 # Proposal Questions:
 Project Description: In this project, we use machine learning models such as Multi-Linear Regressiona and Times Series ARIMA to predict future Opioid prescription claim amounts. The historical data gathered included included opioid claim amounts from 2006 - 2017 in the United States. The Opioid Epedemic began in the early 2000s as opioids were initially prescribed by doctors for physical pain management. As the prescription claim amount increased, research began to discovery the reason for addiction and manage usage. 
